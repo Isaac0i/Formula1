@@ -5,6 +5,23 @@ const modal2 = document.querySelector("#modal2")
 const fade1 = document.querySelector("#fade1")
 const fade2 = document.querySelector("#fade2")
 
-[openModalButton1, fade1].forEach((el) => {
-    el.addEventlistener("click", () => console.log("teste"));
+
+const toggleModal = () => {
+    console.log("modal 1")
+    modal1.classList.toggle("hide");
+    fade1.classList.toggle("hide");
+}
+
+const toggleModal2 = () => {
+    console.log("modal 2")
+    modal2.classList.toggle("hide");
+    fade2.classList.toggle("hide");
+}
+
+[openModalButton2, fade2].forEach(el => {
+    el.addEventListener("click", () => toggleModal2());
+});
+
+[openModalButton1, fade1].forEach(el => {
+    el.addEventListener("click", () => toggleModal());
 });

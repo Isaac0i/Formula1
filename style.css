@@ -19,7 +19,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(40, 40, 40);
+    background-color: #282828;
 }
 
 .f1logo {
@@ -108,7 +108,19 @@
     cursor: pointer;
 }
 
-#fade{
+#fade1, #modal1 {
+    transition: .5s;
+    opacity: 1;
+    pointer-events: all;
+}
+
+#fade2, #modal2 {
+    transition: .5s;
+    opacity: 1;
+    pointer-events: all;
+}
+
+#fade1, #fade2{
     position: fixed;
     top: 0;
     left: 0;
@@ -118,28 +130,32 @@
     z-index: 20;
 }
 
-/* #modal1 { 
+ #modal1 { 
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #FFFFFF;
+    background-color: #444343;
+    color: var(--branco);
     z-index: 50;
-    width: 45rem;
+    width: 50rem;
     max-width: 90%;
+    height: 37rem;
     padding: 1rem;
     border-radius: .5rem;
-}*/
+}
 
 #modal2 {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #FFFFFF;
+    background-color: #444343;
+    color: var(--branco);
     z-index: 50;
-    width: 45rem;
+    width: 55rem;
     max-width: 90%;
+    height: 37rem;
     padding: 1rem;
     border-radius: .5rem;
 }
@@ -151,8 +167,36 @@
 }
 
 #modal1.hide,
-#fade1.hide,
+#fade1.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
 #modal2.hide,
 #fade2.hide  {
     opacity: 0;
+    pointer-events: none;
+}
+
+.modal-list {
+    display: inline-block;   
+}
+
+.modal-itens {
+    display: inline-block;
+    padding: 1rem;  
+    width: 20rem;
+}
+
+.modal-list h4 {
+    font-size: 1.2rem;
+}
+
+.modal-resumo h4 {
+    font-size: 1.2rem;
+    margin-bottom: .75rem;
+}
+
+.modal-resumo {
+    letter-spacing: 1px;
 }
