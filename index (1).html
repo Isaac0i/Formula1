@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet"></head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+</head>
 <body>
     <header class="header">
         <img src="F1logoTeste.png" alt="Logo F1" class="f1logo">
@@ -35,11 +38,23 @@
         </section>
 
         <section class="car">
-
-        </section>
+            <h2 class="car-title">RB21 – Red Bull Racing 2025</h2>
+            <model-viewer 
+                src="f1-2025_redbull_rb21.glb" 
+                alt="Carro da Red Bull RB21 2025"
+                camera-controls 
+                auto-rotate 
+                rotation-per-second="30deg"
+                shadow-intensity="1"
+                exposure="1"
+                style="width: 100%; height: 600px; background-color: #000;">
+            </model-viewer>
+          </section>
+          
 
         <section class="drivers" >
-            <div class="drivers-card" >
+            <h2 class="drivers-title">Pilotos</h2>
+            <div class="drivers-card" > 
 
                 <button id="open-modal1">
                     <img src="p1Redbull.png" alt="Max Verstappen"  class="drivers-img">
@@ -107,19 +122,25 @@
         </section>
 
         <section class="hq">
-            <img src="sede2Redbull.avif" alt="Sede da Red Bull">
-            <p>A sede da Red Bull Racing está localizada em Milton Keynes, na Inglaterra. A equipe foi fundada em 2005, após a Red Bull adquirir a antiga Jaguar Racing, com o objetivo de criar uma escuderia capaz de competir no mais alto nível da Fórmula 1.
-
-               Desde então, o time cresceu rapidamente, tornando-se uma das forças dominantes da categoria. Sob a liderança de Christian Horner e com o engenheiro Adrian Newey como responsável pelos projetos dos carros, a Red Bull Racing conquistou múltiplos campeonatos mundiais de pilotos e construtores, especialmente nas eras de Sebastian Vettel e, mais recentemente, com Max Verstappen.
-
-               A sede em Milton Keynes é um verdadeiro centro tecnológico, onde todas as etapas de desenvolvimento desde o design até a fabricação das peças acontecem internamente. Entre as curiosidades, está o fato de que o local abriga túneis de vento de última geração e simulações digitais avançadas, fundamentais para o sucesso da equipe. Além disso, a cultura dentro da fábrica reflete o espírito jovem e ousado da marca Red Bull, combinando criatividade, precisão e velocidade dentro e fora das pistas.
-            </p>
+            <img src="sede2Redbull.avif" alt="Sede da Red Bull" class="hq-img">
+            <article>
+                <h4 class="hq-title">Onde a magica acontece!</h4>
+                <p class="hq-text">A sede da Red Bull Racing está localizada em Milton Keynes, na Inglaterra. A equipe foi fundada em 2005, após a Red Bull adquirir a antiga Jaguar Racing, com o objetivo de criar uma escuderia capaz de competir no mais alto nível da Fórmula 1.
+    
+                   Desde então, o time cresceu rapidamente, tornando-se uma das forças dominantes da categoria. Sob a liderança de Christian Horner e com o engenheiro Adrian Newey como responsável pelos projetos dos carros, a Red Bull Racing conquistou múltiplos campeonatos mundiais de pilotos e construtores, especialmente nas eras de Sebastian Vettel e, mais recentemente, com Max Verstappen.
+    
+                   A sede em Milton Keynes é um verdadeiro centro tecnológico, onde todas as etapas de desenvolvimento desde o design até a fabricação das peças acontecem internamente. Entre as curiosidades, está o fato de que o local abriga túneis de vento de última geração e simulações digitais avançadas, fundamentais para o sucesso da equipe. Além disso, a cultura dentro da fábrica reflete o espírito jovem e ousado da marca Red Bull, combinando criatividade, precisão e velocidade dentro e fora das pistas.
+                </p>
+            </article>
         </section>
 
         <section class="mananger">
-            <p>Laurent Mekies, nascido em 1977 na França, é engenheiro formado pela ESTACA e atualmente o chefe da equipe Oracle Red Bull Racing. Ele iniciou sua carreira na Fórmula 1 em 2001, na equipe Arrows, e logo depois ingressou na Minardi, que mais tarde se tornou a Toro Rosso, onde atuou como chefe de engenharia. Em 2014, Mekies passou a trabalhar na FIA como diretor de segurança e vice-diretor de corrida, contribuindo para avanços importantes, como a implementação do halo de proteção dos pilotos. Retornou às equipes em 2018, assumindo cargos de liderança na Ferrari até se tornar diretor de corrida. Em 2025, após a saída de Christian Horner, foi nomeado chefe da Red Bull Racing, trazendo uma abordagem técnica e colaborativa à liderança da equipe da Fórmula 1.
-            </p>
-            <img src="chefeRedbull.png" alt="Chefe da Red Bull">
+            <article>
+                <h4 class="mananger-title">Quem dá as ordens...</h4>
+                <p class="mananger-text">Laurent Mekies, nascido em 1977 na França, é engenheiro formado pela ESTACA e atualmente o chefe da equipe Oracle Red Bull Racing. Ele iniciou sua carreira na Fórmula 1 em 2001, na equipe Arrows, e logo depois ingressou na Minardi, que mais tarde se tornou a Toro Rosso, onde atuou como chefe de engenharia. Em 2014, Mekies passou a trabalhar na FIA como diretor de segurança e vice-diretor de corrida, contribuindo para avanços importantes, como a implementação do halo de proteção dos pilotos. Retornou às equipes em 2018, assumindo cargos de liderança na Ferrari até se tornar diretor de corrida. Em 2025, após a saída de Christian Horner, foi nomeado chefe da Red Bull Racing, trazendo uma abordagem técnica e colaborativa à liderança da equipe da Fórmula 1.
+                </p>
+            </article>
+            <img src="chefeRedbull.png" alt="Chefe da Red Bull" class="mananger-img">
         </section>
     </main>
     

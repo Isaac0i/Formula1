@@ -11,7 +11,7 @@
     --branco: #FFFFFF;
     --cinza: #1C1C24;
     --cinza-escuro: #10121B;
-    --vermelho:v #DA291C;
+    --vermelho: #DA291C;
     --amarelo: #FFD700;
 }
 
@@ -44,8 +44,6 @@
     background: linear-gradient(to bottom, var(--azul-claro), var(--azul-escuro));
     height: 95vh;
     color: #D9D4CE;
-    justify-content: center;
-    align-items: center;
 }
 
 .principalImg {
@@ -80,7 +78,7 @@
 }
 
 .history-img{
-    width: 28rem0rem;
+    width: 37rem;
     height: 25rem;
     border-radius: .25rem;
 }
@@ -89,7 +87,7 @@
     color: var(--branco);
     width: 40rem;
     margin: 5rem;
-    letter-spacing: 0.1rem;
+    font-size: 1.12rem;
 }
 
 .history-title {
@@ -163,6 +161,10 @@
     font-size: 2rem;
 }
 
+.modal-header h3{
+    font-weight: 300;
+}
+
 #modal1.hide,
 #fade1.hide {
     opacity: 0;
@@ -205,20 +207,21 @@
 }
 
 .drivers {
-    background-color: var(--cinza-escuro);
-    display: flex;
-    justify-content:center;
-    align-items:center;
+    background: radial-gradient(circle, #0c0c39, var(--cinza-escuro));
+    text-align: center;
 }
 
 .drivers-card {
-    width: 50rem;
+    display: flex;
+    justify-content:center;
+    align-items:center;
     padding: 4rem;
 }
 
 .drivers-img {
     width: 15rem;
-    height: 40rem;
+    height: 43rem;
+
 }
 
 button {
@@ -231,3 +234,89 @@ button {
     background: linear-gradient(to bottom, var(--azul-claro), var(--azul-escuro));
     cursor: pointer;
 }
+
+#open-modal1 {
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+}
+
+#open-modal2 {
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+}
+
+.drivers-title {
+    padding-top: 1rem;
+    color: var(--branco);
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.hq {
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cinza);
+    padding: 2rem;
+}
+
+.hq-img {
+    width: 60rem;
+    height: 30rem;
+    border-radius: .5rem;
+    margin: 1rem;
+}
+
+.hq-title {
+    font-weight: 300;
+    font-size: 1.75rem;
+    margin: 1rem;
+}
+
+.hq-text {
+    margin: 1rem;
+    font-size: 1.12rem;
+}
+
+.mananger {
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cinza-escuro);
+    padding: 2rem;
+}
+
+.mananger-img {
+    width: 30rem;
+    height: 15rem;
+    border-radius: .5rem;
+    margin: 1rem;
+}
+
+.mananger-title {
+    font-weight: 300;
+    font-size: 1.75rem;
+    margin: 1rem;
+}
+
+.mananger-text {
+    margin: 1rem;
+    font-size: 1rem;
+}
+
+
+.car {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #111;
+    color: #fff;
+  }
+  
+  .car-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'Rubik', sans-serif;
+  }
+  
